@@ -1,9 +1,4 @@
-# Team-Level Rules
-
-> This team's affirmed practices and corrections. Loaded after `org.md` as
-> strict-additive guidance; contradictions with broader policy are rejected.
-> Populated by the practices-discovery affirmation gate. Edit at the gate,
-> not directly.
+# Thực hành nhóm — BIZ Mini App Platform
 
 ## Way of Working
 
@@ -25,10 +20,6 @@
 - Bao gồm unit test, tích hợp Redis/PostgreSQL và kịch bản API quản trị có kết quả xác định.
 - CI chạy kiểm tra trước merge; phạm vi CI không bao gồm triển khai staging/cloud cho bản demo.
 
-## Guard Policy
-
-<!-- Affirmed by the team. Mode: strict, relaxed, or off. Strict here holds for every intent and cannot be changed from chat. A section under the retired Change Control heading, written by an earlier release, is still read. -->
-
 ## Deployment
 
 - Demo chạy local bằng Docker Compose với backend mock dạng microservice, Redis và PostgreSQL.
@@ -41,14 +32,3 @@
 - Cấu hình formatter, linter và dependency check được commit cùng dự án và chạy trong CI.
 - Tổ chức theo capability quản trị Mini App, với ranh giới rõ giữa API, nghiệp vụ, persistence và truy cập phiên giả lập.
 - DTO nằm ở biên API; lỗi trả về ổn định, không lộ SessionId, secret hay stack trace.
-## Forbidden
-
-<!-- Team-specific forbidden patterns -->
-
-## Mandated
-
-<!-- Team-specific mandates -->
-
-## Corrections
-
-<!-- Self-learning loop appends here. -->
